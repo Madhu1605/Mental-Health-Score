@@ -311,7 +311,10 @@ with col3:
 
 st.markdown("</div>", unsafe_allow_html=True)
 
-
+stress_level = st.selectbox(
+    "Stress Level",
+    ["Low", "Medium", "High", "Very High"]
+)
 # =========================================================
 # PREDICT BUTTON
 # =========================================================
@@ -338,8 +341,8 @@ if predict:
         "physical_activity_hours": physical_activity,
         "sleep_hours_per_night": sleep_hours,
 
-        # Required by your current FastAPI
-        "stress_level": "Low"
+        
+        "stress_level": stress_level
     }
 
     try:
