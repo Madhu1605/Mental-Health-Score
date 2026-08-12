@@ -350,7 +350,7 @@ if predict:
         with st.spinner("Generating your score..."):
 
             response = requests.post(
-                "http://127.0.0.1:8000/predict",
+                "https://mental-health-score-1-63iu.onrender.com/predict",
                 json=payload,
                 timeout=20
             )
@@ -436,9 +436,7 @@ if predict:
             "Make sure FastAPI is running with:"
         )
 
-        st.code(
-            "py -3.13 -m uvicorn main:app --reload"
-        )
+        
 
     # -----------------------------------------------------
     # TIMEOUT
