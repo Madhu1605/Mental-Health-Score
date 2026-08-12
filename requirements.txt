@@ -1,0 +1,8 @@
+streamlit
+requests
+fastapi
+uvicorn
+pandas
+scikit-learn==1.6.1
+joblib
+pydantic
